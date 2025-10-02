@@ -10,8 +10,8 @@ google_api_key = os.getenv("GOOGLE_API_KEY")
 llm = ChatGoogleGenerativeAI(model="gemini-2.5-flash", temperature=0.4)
 
 # single prompt
-# response = llm.invoke("define langchain in one sentence")
-# print(response.content)
+response = llm.invoke("define langchain in one sentence")
+print(response.content)
 
 # multiple prompts
 # prompts = ["What is LangChain?", "What is Gemini?"]
